@@ -1,7 +1,8 @@
 FROM alpine:latest
 
 RUN apk add --update nodejs nodejs-npm \
-    && npm install npm@latest -g
+    && npm install npm@latest -g \
+    && git
 
 WORKDIR /SiaraBot
 
